@@ -18,9 +18,10 @@
 
 // Layer numbers for use by the keymap & macros
 
-#define WINDOWS   0
-#define W_SYMBOLS 1
-#define NUMPAD    2
+#define DEFAULT 0
+#define NUMBER  1
+#define FN  2
+#define HOTKEY  3
 
 
 
@@ -30,7 +31,7 @@
         compatible = "zmk,keymap";
 
         windows_default_layer {
-            display-name = "Windows";
+            label = "DEFAULT";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
@@ -45,7 +46,7 @@
  
 
         windows_symbols_layer {
-            display-name = "Symbols (Win)";
+            label = "NUMBER";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
@@ -58,7 +59,7 @@
         };
 
         numpad_layer {
-            display-name = "Number Pad";
+            label = "FN";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
@@ -73,7 +74,7 @@
 
 
       settings_layer {
-            display-name = "Settings";
+            label = "HOTKEY";
             sensor-bindings = <&bri_adjust &inc_dec_kp LEFT RIGHT>;
             bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬────────────────╮                                 ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
