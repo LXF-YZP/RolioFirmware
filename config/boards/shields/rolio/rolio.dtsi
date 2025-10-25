@@ -78,11 +78,11 @@ split_inputs {
             compatible = "zmk,input-split";
             reg = <0x74>;
         };
-    };
+};
 
-	tps43_listener: tps43_listener {
+tps43_listener: tps43_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&tps43_split>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP)>;
-    };
+};
