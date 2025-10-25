@@ -70,9 +70,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                    RC(2,6) RC(2,
        };
 };
 
-/ {
-
-    split_inputs {
+split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
 
@@ -88,4 +86,3 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                    RC(2,6) RC(2,
         device = <&tps43_split>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP)>;
     };
-};
