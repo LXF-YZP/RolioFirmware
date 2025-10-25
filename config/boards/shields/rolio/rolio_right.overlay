@@ -15,6 +15,17 @@
         ;
 };
 
+
+/ {
+    chosen {
+      zmk,battery = &vbatt;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+    };
+};
+
 &tps43_split {
     device = <&tps43>;
 };
