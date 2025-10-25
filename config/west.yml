@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: elpekenin
-      url-base: https://github.com/elpekenin
+    - name: AYM1607
+      url-base: https://github.com/AYM1607
   projects:
     - name: zmk
-      import: app/west.yml
       remote: zmkfirmware
       revision: main
-    - name: zmk-userspace
-      remote: elpekenin
+      import: app/west.yml
+    - name: zmk-driver-azoteq-iqs5xx
+      remote: AYM1607
       revision: main
   self:
     path: config
