@@ -21,7 +21,7 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <14>;
+        columns = <12>;
         rows = <4>;
 // | SW_A0 | SW_B0 | SW_C0 | SW_D0 | SW_E0 | SW_F0 |                   | SW_F0 | SW_E0 | SW_D0 | SW_C0 | SW_B0 | SW_A0 |
 // | SW_A1 | SW_B1 | SW_C1 | SW_D1 | SW_E1 | SW_F1 |                   | SW_F1 | SW_E1 | SW_D1 | SW_C1 | SW_B1 | SW_A1 |
